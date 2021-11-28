@@ -1,0 +1,18 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.sony {
+    background-color: black;
+    text-align: right;
+    padding-right: 5px;
+    padding-top:6px;
+    padding-bottom: 6px;
+}
+
+.sony-logo {   
+    min-width: 82px;
+    width: 5%;
+}
