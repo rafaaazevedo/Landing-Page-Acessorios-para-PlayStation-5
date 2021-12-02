@@ -4,6 +4,19 @@
     box-sizing: border-box;
 }
 
+/* html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+} */
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.section {
+    min-height: 100vh;
+}
+
 .sony {
     background-color: black;
     text-align: right;
@@ -15,4 +28,200 @@
 .sony-logo {   
     min-width: 82px;
     width: 5%;
+}
+
+.container-logo-init-search {
+    /* background-color: yellow; */
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+}
+
+.logo-ps {
+    /* background-color: green; */
+    justify-self: start;
+    margin-left: 20px;
+}
+
+.init-search {
+    /* background-color: violet; */
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+     /* flex: 1 0 auto; 1: crescer(logo não dimini mais), 0: reduzir, auto: tamanho mínimo necessário para preencher a dimensão do eixo principal */
+}
+
+.init {
+    /* background: red; */
+    background-color: white;
+    margin-right: 10px;
+}
+
+.init button {
+    background-color: rgb(32, 32, 32);
+    border-radius: 23px;
+    padding: 6px;
+    border: none;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.init button a {
+    color: white;
+    text-decoration: none;
+}
+
+.search {
+    /* background: purple; */
+    margin-right: 20px;   
+}
+
+/* .search input {
+    font-size: 20px;
+    margin-bottom: 5px;
+} */
+
+.search button {
+    text-decoration: none;
+    border: none;
+    
+}
+
+.search button {
+    background-image: url("assets/img/search.png");
+    background-size: 23px;
+    height: 23px;
+    width: 23px;
+    
+}
+
+#playstation-logo {
+    height: 50px;
+    width: 50px;
+}
+
+.menu {
+    width: 100%;
+}
+
+.menu-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    margin: 20px;
+}
+
+.menu-content h1 a {
+    text-decoration: none;
+    color: black;
+    
+}
+
+.menu-content ul {
+    display: flex;
+    list-style: none;
+    text-align: center;
+}
+
+.menu-item {
+    flex-direction: row;
+    flex: 1;
+    font-weight: bold;
+    color: #a7a4a4;
+}
+
+.menu-item {
+    flex-direction: row;
+    flex: 1;
+    font-weight: bold;
+    color: #a7a4a4;
+    margin-left: 40px;;
+}
+
+.menu-item a {
+    text-decoration: none;
+    color:black;
+    font-size: 14px;
+}
+
+.white-background {
+    background: white;
+    color: black;
+}
+
+.gray-background {
+    background: #dbdcdf;;
+    color: black;
+    min-height: 600px;
+    background-position: center center;
+    background-size: cover;
+    /* max-width: 1280px; */
+}
+
+.access-content {
+    display: grid;
+    grid-template-columns: 1.5fr 2fr;
+}
+
+.access-content-text {
+    margin-top: 160px;
+    margin-left: 80px;
+    margin-bottom: 300px;
+    padding: 25px 25px 25px 25px;
+    /* border: 1px solid; */
+    background: rgb(235, 235, 235);
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: left;
+}
+
+.access-content-text h1 {
+    color: #337AFF;
+    font-size: 45px;
+}
+
+.access-content-text p {
+    color: #504f4f;
+    font-size: 22px;
+    line-height: 23px;
+}
+
+.control-wifi {
+    display: grid;
+    grid-template-rows: 1.5fr 1fr;
+    text-align: center;
+    margin: 60px;
+    /* max-width: 100px; */
+}
+
+.control-wifi-title-img h2 {
+    font-weight: normal;
+    font-size: 40px;
+    margin-top: 10px;
+    margin-bottom: 60px;
+}
+
+
+.control-wifi-text p {
+    margin-left: 320px;
+    margin-right: 320px;
+    margin-top: 60px;
+    margin-bottom: 40px;
+    line-height: 25px;
+    color: #504f4f;
+}
+
+.control-wifi-text button {
+    border-radius: 18px;
+    background: rgb(0, 89, 255);
+    color: white;
+    font-size: 15px;
+    border: none;
+    padding: 10px;
+}
+
+.control-wifi-text button a {
+    text-decoration: none;
+    color: inherit;
 }
