@@ -279,3 +279,28 @@ body {
     margin-top: 40px;
 }
 
+.headset {
+    display: grid;
+    grid-template-rows: 2fr 1fr;
+    justify-items: center;
+    align-items: center;
+    margin: 50px 380px;
+    line-height: 25px;
+}
+
+.headset p {
+    color: rgb(80, 79, 79);
+}
+
+.headset button {
+    border-radius: 18px;
+    background-color: rgb(0, 89, 255);
+    font-size: 15px;
+    border: none;
+    padding: 10px;
+}
+
+.headset button a{
+    text-decoration: none;
+    color: white;
+}
