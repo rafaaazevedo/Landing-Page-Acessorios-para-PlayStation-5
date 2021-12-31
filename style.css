@@ -9,8 +9,14 @@
     scroll-behavior: smooth;
 } */
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: Arial, Helvetica, sans-serif;
+    overflow-x: hidden; /*retira a barra de rolagem debaixo*/
+    scroll-behavior: smooth;
 }
 
 .section {
@@ -195,7 +201,9 @@ body {
 .gray-background {
     background: #ececec;
     color: black;
-    min-height: 600px;
+    /* min-height: 80px; */
+    width: 1349px;
+    height: 500px;
     background-position: center center;
     background-size: cover;
     /* max-width: 1280px; */
@@ -206,8 +214,20 @@ body {
     grid-template-columns: 1.5fr 2fr;
 }
 
+.access-content-img {
+    width: 500px;
+    height: 500px;
+    margin-left: 30px;
+}
+
+.access-content img {
+    width: 500px;
+    height: 500px;
+    margin-left: 30px;
+}
+
 .access-content-text {
-    margin-top: 160px;
+    margin-top: 135px;
     margin-left: 80px;
     margin-bottom: 300px;
     padding: 25px 25px 25px 25px;
@@ -533,4 +553,6 @@ body {
 }
 
 
+/* ajustes feitos: retirada da barra de rolagem inferior, botão back to top retorna suavemente, ajuste do tamanho da imagem PS5*/
+/* falta - vídeo e botão de clique no menu para ir para cada seção*/
 
