@@ -39,16 +39,18 @@
     <aside class="menu">
         <div class="menu-content">
             <div class="menu-title">
-                <h1><a href="#Acessorios">Acessórios</a></h1>
+                <h1 onclick="getElementById('close-menu').ckecked=false;">
+                    <a href="#access">Acessórios</a>
+                </h1>
             </div>
             <div class="menu-list">
                 <nav>
-                    <ul>
-                        <li class="menu-item"> <a href="#Controle sem fio DualSense">Controle sem fio DualSense</a></li>
-                        <li class="menu-item"><a href="#Base de carregamento DualSense">Base de carregamento</a></li>
-                        <li class="menu-item"><a href="#Headset sem fio PULSE 3D">Headset sem fio PULSE 3D</a></li>
-                        <li class="menu-item"><a href="#Controle de mídia">Controle de mídia</a></li>
-                        <li class="menu-item"><a href="#Câmera HD">Câmera HD</a></li>
+                    <ul onclick="getElementById('close-menu').checked=false;">
+                        <li class="menu-item"> <a href="#control">Controle sem fio DualSense</a></li>
+                        <li class="menu-item"><a href="#charging">Base de carregamento</a></li>
+                        <li class="menu-item"><a href="#headset-pulse">Headset sem fio PULSE 3D</a></li>
+                        <li class="menu-item"><a href="#media-contr">Controle de mídia</a></li>
+                        <li class="menu-item"><a href="#camera-hd">Câmera HD</a></li>
                         <!-- <li class="menu-item"><a href="Adaptador de PlayStation® Camera">Adaptador da PlayStation® Camera</a></li> -->
                     </ul>
                 </nav>
@@ -56,7 +58,7 @@
         </div>
     </aside>
    
-    <section class="gray-background">
+    <section id="access" class="gray-background">
         <div class="access-content">
             <div class="access-content-text">
                 <h1>Acessórios PlayStation®5</h1><br>
@@ -68,7 +70,7 @@
         </div>
     </section>
  
-    <section>
+    <section id="control">
         <div class="control-wifi"> <!--com menos div-->
             <div class="control-wifi-title-img">
                 <h2>Controle sem fio DualSense™</h2><br>
@@ -84,7 +86,7 @@
         </div>
     </section>
 
-    <section class="gray-background">
+    <section id="charging" class="gray-background">
         <div class="charging-base-content">
             <div class="charging-base-text">
                 <div class="charging-base-title">
@@ -106,7 +108,7 @@
         </div>
     </section>
 
-    <section>
+    <section id="headset-pulse">
         <div class="headset">
                 <h2>Headset sem fio PULSE 3D™ </h2><br>
                 <img src="assets/img/headset.png"  alt="fone de ouvido PS5, headset sem fio PULSE 3D preto e branco"><br>
@@ -117,7 +119,7 @@
         </div>
     </section>
 
-    <section class="gray-background-little">
+    <section id="media-contr" class="gray-background-little">
         <div class="media-control">
             <div class="media-control-img">
                 <img src="assets/img/media_control.png">
@@ -132,7 +134,7 @@
         </div>
     </section>
 
-    <section>
+    <section id="camera-hd">
         <div class="camera">
             <div class="camera-text-img">
                 <div class="camera-text">
@@ -163,8 +165,7 @@
         </div> 
     </footer>
 
-    <a href="#" class="back-to-top">➤</a>
-    
+    <a href="#" class="back-to-top">❱</a>
     
 </body>
 </html>

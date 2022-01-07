@@ -196,6 +196,7 @@ body {
 .white-background {
     background: white;
     color: black;
+    min-height: 100vh;
 }
 
 .gray-background {
@@ -207,11 +208,13 @@ body {
     background-position: center center;
     background-size: cover;
     /* max-width: 1280px; */
+    min-height: 100vh;
 }
 
 .access-content {
     display: grid;
     grid-template-columns: 1.5fr 2fr;
+    min-height: 100vh;
 }
 
 .access-content-img {
@@ -254,6 +257,7 @@ body {
     text-align: center;
     margin: 60px;
     /* max-width: 100px; */
+    min-height: 100vh;
 }
 
 .control-wifi-title-img h2 {
@@ -292,6 +296,7 @@ body {
     grid-template-columns: 1fr 1fr;
     text-align: left;
     /* margin: 60px; */
+    min-height: 100vh;
 }
 
 .charging-base-text {
@@ -353,6 +358,7 @@ body {
     align-items: center;
     margin: 50px 380px;
     line-height: 25px;
+    min-height: 100vh;
 }
 
 .headset p {
@@ -394,6 +400,7 @@ body {
     align-items: center;
     justify-items: center;
     gap: 20px 20px;
+    min-height: 100vh;
 }
 
 .media-control-img {
@@ -440,6 +447,7 @@ body {
     display: grid;
     grid-template-columns: 1fr;
     margin: 30px 190px;
+    min-height: 100vh;
 }
 
 .camera-text-img {
@@ -532,10 +540,10 @@ body {
 
 .back-to-top {
     border-radius: 50%;
-    border: 1px solid rgb(0, 89, 255);
-    width: 50px;
-    height: 50px;
-    color: rgb(0, 67, 156);;
+    border: 1px solid rgb(202, 202, 202);
+    width: 45px;
+    height: 45px;
+    color: rgb(0, 67, 156);
     text-decoration: none;
     transform: rotate(-90deg);
     
@@ -544,15 +552,16 @@ body {
     align-items: center;
     
     position: fixed;
-    bottom: 20px;
-    right: 20px;
+    bottom: 1px;
+    right: 1px;
 
     background-color: white;
-    margin-right: 20px;
-    margin-bottom: 20px;
+    margin-right: 10px;
+    margin-bottom: 10px;
 }
 
-
-/* ajustes feitos: retirada da barra de rolagem inferior, botão back to top retorna suavemente, ajuste do tamanho da imagem PS5*/
-/* falta - vídeo e botão de clique no menu para ir para cada seção*/
-
+@media (max-width: 80px) {
+    .access-content, .control-wifi, .charging-base-content, .headset, .media-control, .camera, .playstation-footer{
+        grid-template-columns: 1fr;      
+    }
+}
