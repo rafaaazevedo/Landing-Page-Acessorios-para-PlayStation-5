@@ -1,172 +1,84 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-BR">    
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Acessórios para PS5 | Uma nova geração de acessórios para o PlayStation Brasil</title>
+    <title>Landing Page Acessórios PS5</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <section>
-        <div class="sony">
-            <img src="assets/img/sony-logo.png" class="sony-logo">
-        </div>
-    </section>
 
-    
-    <section>
-        <div class="container-logo-init-search">
-            <div class="logo-ps">
-                <!-- 1 -->
-                <img src="assets/img/PlayStation-Icon-Logo.svg" id="playstation-logo">
-            </div>
-            
-            <div class="init-search">
-                <div class="init">
-                    <!-- 2 -->
-                    <button><a href="#init-section">Iniciar sessão</a></button>
-                </div>
-                <div class="search">
-                    <!-- 3 -->
-                    <button id="search-button"><a href="#search"></a></button>
-                   
-                </div> 
-            </div>
-        </div>         
-    </section>
- 
-    <aside class="menu">
-        <div class="menu-content">
-            <div class="menu-title">
-                <h1 onclick="getElementById('close-menu').ckecked=false;">
-                    <a href="#access">Acessórios</a>
-                </h1>
-            </div>
-            <div class="menu-list">
-                <nav>
-                    <ul onclick="getElementById('close-menu').checked=false;">
-                        <li class="menu-item"> <a href="#control">Controle sem fio DualSense</a></li>
-                        <li class="menu-item"><a href="#charging">Base de carregamento</a></li>
-                        <li class="menu-item"><a href="#headset-pulse">Headset sem fio PULSE 3D</a></li>
-                        <li class="menu-item"><a href="#media-contr">Controle de mídia</a></li>
-                        <li class="menu-item"><a href="#camera-hd">Câmera HD</a></li>
-                        <!-- <li class="menu-item"><a href="Adaptador de PlayStation® Camera">Adaptador da PlayStation® Camera</a></li> -->
-                    </ul>
-                </nav>
-            </div>           
-        </div>
+    <aside id="sony-bar">
+        <a href=#>
+            <img src="assets/img/sony-logo.png"></img> <!--faltou o .png na página do github?-->
+        </a>
     </aside>
-   
-    <section id="access" class="gray-background">
-        <div class="access-content">
-            <div class="access-content-text">
-                <h1>Acessórios PlayStation®5</h1><br>
-                <p>Jogue sem limites com a nova geração de acessórios PlayStation®5.</p>
-            </div>
-            <div class="access-content-img">
-                <img src="assets/img/playstation_5.png">
-            </div>    
-        </div>
-    </section>
- 
-    <section id="control">
-        <div class="control-wifi"> <!--com menos div-->
-            <div class="control-wifi-title-img">
-                <h2>Controle sem fio DualSense™</h2><br>
-                <img src="assets/img/controls.png"  alt="três controles de PS5 nas cores branco, vinho e preto.">
-            </div>
-            <div class="control-wifi-text">
-                <p>
-                    Descubra uma experiência de jogos mais profunda e altamente imersiva com o novo controle do PS5™, que oferece resposta tátil e gatilhos adaptáveis. 
-                    O controle sem fio DualSense também inclui um microfone embutido e botão de criação, tudo em um design icônico e confortável.
-                </p>
-                <button><a href="#know-more">Saiba mais</a></button>
-            </div>
-        </div>
-    </section>
 
-    <section id="charging" class="gray-background">
-        <div class="charging-base-content">
-            <div class="charging-base-text">
-                <div class="charging-base-title">
-                    <h2>Base de carregamento DualSense™</h2>
-                </div>
-                <div class="charging-base-p">
-                    <p>
-                        Carregue até dois controles sem fio DualSense simultaneamente sem precisar conectá-los ao console PlayStation 5.
-                    </p>
-                </div>
-                <div class="charging-base-button"> 
-                    <button><a href="#charging-button">Saiba mais</a></button>
-                </div>               
-            </div>
+    <input id="close-menu" class="close-menu" type="checkbox" aria-label="Close menu" role="button">
+    <label class="close-menu-label" for="close-menu" title="close menu"></label>
+    <aside class="bg-little-white little-white-position">
+        <div id="menu">
+            <a href="#"">
+                <img src="assets/img/logo-ps5.png" onclick="getElementById('close-menu').checked=false;">
+            </a>
+            
+            <nav>
+                <ul id="menu-list" onclick="getElementById('close-menu').checked=false;">
+                    <li><a href="#controls">Controles</a></li>
+                    <li><a href="#charging-base">Carregamento</a></li>
+                    <li><a href="#">Fones</a></li>
+                    <li><a href="#">Controle de mídia</a></li>
+                    <li><a href="#">Câmera</a></li>
+                </ul>
+            </nav>
+    
+            <button id="menu-begin-session"><a href="#"">Iniciar sessão</a></button>
+        </div>   
+    </aside>
 
-            <div class="charging-base-img">
-                <img src="assets/img/base-carregamento.png">
-            </div>
+    <section id="intro" class="bg-gray">
+        <div id="intro-content">
+            <h2>Acessórios Playstation 5</h2><br>
+            <p>Jogue sem limites com a nova geração de acessórios PS5.</p>
+        </div>
+        <div id="intro-img">
+            <img src="assets/img/playstation_5.png">
         </div>
     </section>
 
-    <section id="headset-pulse">
-        <div class="headset">
-                <h2>Headset sem fio PULSE 3D™ </h2><br>
-                <img src="assets/img/headset.png"  alt="fone de ouvido PS5, headset sem fio PULSE 3D preto e branco"><br>
-                <p>
-                    Desfrute de conforto ao jogar com um headset sem fio ajustado para áudio 3D em consoles PS5. Com carregamento USB Type-C®  e dois microfones para cancelamento de ruído, você pode curtir o bate-papo com a maior nitidez de voz.
-                </p><br>
-                <button><a href="#know-more">Saiba mais</a></button>
+    <section class="bg-white">
+        <div id="controls" class="controls-dualsense">
+            <h3>Controle sem fio DualSense</h3><br>
+            <img src="assets/img/controls.png"><br>
+            <p>Descubra uma experiência de jogos mais profunda e altamente imersiva com o novo controle do PS5, 
+                que oferece resposta tátil e gatilhos adaptáveis. O controle sem fio DualSense também inclui um 
+                microfone embutido e botão de criação, tudo em um design icônico e confortável.</p><br>
+            <button class="button-find-out-more">Saiba mais</button>
         </div>
     </section>
 
-    <section id="media-contr" class="gray-background-little">
-        <div class="media-control">
-            <div class="media-control-img">
-                <img src="assets/img/media_control.png">
-            </div>
-            <div class="media-control-content"> 
-                <h2>Controle de mídia</h2><br>
-                <p>
-                    Conveniência e um layout intuitivo para você controlar filmes, serviços de streaming4 e muito mais no seu console PS5.
-                </p><br>
-                <button><a href="#know-more">Saiba mais</a></button>
-            </div>
+    <section id="charging-base" class="bg-gray">
+        <div id="charging-base-content">
+            <h2>Base de Carregamento DualSense</h2><br>
+            <p>Carregue até dois controles sem fio DualSense simultaneamente sem precisar conectá-los ao 
+                console PlayStation 5.</p><br>        
+            <button class="button-find-out-more">Saiba mais</button>
+        </div>
+        <div id="charging-base-img">
+            <img src="assets/img/base-carregamento.png">
         </div>
     </section>
-
-    <section id="camera-hd">
-        <div class="camera">
-            <div class="camera-text-img">
-                <div class="camera-text">
-                    <h2>Câmera HD</h2><br>
-                    <p>
-                        Adicione sua própria imagem aos vídeos de jogabilidade e transmissões3 com uma captura suave, nítida e Full HD.
-                    </p><br>
-                    <button><a href="#know-more">Saiba mais</a></button>
-                </div>
-                <div class="camera-img">
-                    <img src="assets/img/camera.jpg">
-                </div>
-            </div>
-            <div class="camera-adaptador">
-                    <h2>Adaptador da PlayStation® Camera</h2><br>
-                    <p>
-                        Conecte seu PlayStation®VR ao console PS5 para curtir jogos compatíveis com o PS VR. 
-                        Para configurar seu PS VR com o console PS5, você precisará da PlayStation Camera* para PS4™ e do adaptador para PlayStation Camera (não é necessário comprar).
-                    </p>
-            </div>                                    
-        </div> 
-    </section>
-
-    <footer>
-        <div class="playstation-footer">
-            <img src="assets/img/sony-llc.jpg">
-            <h4>© 2022 Sony Interactive Entertainment LLC</h4>          
-        </div> 
-    </footer>
 
     <a href="#" class="back-to-top">❱</a>
-    
 </body>
 </html>
-
