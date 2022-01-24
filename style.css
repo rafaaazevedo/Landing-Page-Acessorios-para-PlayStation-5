@@ -28,6 +28,10 @@ h3 {
     font-family: 'Open Sans', sans-serif;
 }
 
+h6 {
+    font-family: 'Montserrat', sans-serif;
+}
+
 a {
     text-decoration: none;
 }
@@ -59,35 +63,45 @@ a {
     width: 100%; 
     z-index: 1;
     /*border-bottom: 10px solid black; não precisa*/
+    padding: 13px 20px;
 }
 
 #menu {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     padding-top: 0;
     padding-bottom: 0;
 
-    max-width: 1200px;
-    padding: 20px 5px;
-    margin: 0 auto;
+    /* max-width: 1200px;
+    padding: 20px 0px;
+     */
+    /* margin: 20px;  */
+    /* gap: 50px; */
+    margin: 0 auto; /*vai se ajustando quando diminui a tela*/
+    padding: 0px 0px;
 
 }
 
 #menu a {
     width: 262px;
     height: 59px;
+    /* display: block; */
+    /* padding-right: 50px; */
 }
 
 #menu a img {
     width: inherit;
     height: inherit;
+    
 }
 
 #menu-list {
     list-style: none;
-    display: flex; /*por padrão a lista altera para row*/
+    display: flex; 
+    flex-direction: row; /*obs: por padrão a lista altera para row*/
+    justify-content: space-between;
     text-align: center;
     font-size: 13px;
     font-weight: bold;
@@ -111,6 +125,24 @@ li {
     padding: 16px; 
 }
 
+#menu-list li a::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 50%;
+    background: #337AFF;
+    width: 0;
+    height: 3px;
+    transition: all 300ms ease-in-out;
+}
+
+#menu-list li a:hover::after {
+    width: 50%;
+    left: 25%;
+    color: #337AFF;
+}
+
+
 #menu-begin-session {
     background-color: black;
     padding: 6px;
@@ -125,10 +157,11 @@ li {
 }
 
 
+
 .bg-gray {
     background-color: rgb(228, 228, 228);
     /* width: 1366px; */
-    height: 515px;
+    height: 535px;
 }
 
 #intro {
@@ -151,7 +184,7 @@ li {
 }
 
 #intro-content p {
-    font-size: 30px;
+    font-size: 28px;
     color: rgba(0, 0, 0, 0.623);
 }
 
@@ -173,6 +206,17 @@ li {
 .bg-white {
     /* width: 1366px; */
     height: 632px;
+    background-color: white;  
+}
+
+.bg-white-middle {
+    height: 750px;
+    background-color: white;  
+}
+
+.bg-white-big {
+    /* width: 1366px; */
+    height: 932px;
     background-color: white;  
 }
 
@@ -204,12 +248,71 @@ p {
 }
 
 #charging-base-content {
-    margin-left: 200px;
+    margin-left: 200px; /*trocar para padding*/
 }
 
 #charging-base-img {
     width: 433px;
     height: 399px;
+}
+
+#headset-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 80px 300px 60px 300px;
+}
+
+#headset-content img {
+    width: 333;
+    height: 499;
+}
+
+#media-control {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    padding-right: 220px;
+    padding-left: 220px;
+}
+
+#camera {
+    display: grid;
+    grid-template-areas: 
+        "camera-content camera-img"
+        "adaptador-camera adaptador-camera";
+    justify-content: center;
+    align-items: center;
+    padding-right: 200px;
+    padding-left: 200px;
+}
+
+#camera-content {
+    grid-area: camera-content;
+    padding-top: 58px;
+}
+
+#camera-img {
+    grid-area: camera-img;
+}
+
+#adaptador-camera {
+    grid-area: adaptador-camera;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+#footer {
+    height: 150px;
+    background-color: #00439C;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 30px;
+    font-family: sans-serif;
 }
 
 .back-to-top {
@@ -236,6 +339,107 @@ p {
 
 .close-menu {
     display: none; /*retira o checkbox*/   
+}
+
+@media (max-width: 1181px){
+    .little-white-position {
+        display: none;
+        bottom: 0;
+        text-align: center;
+    }
+
+    #menu, #menu-list {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #menu {
+        height: 100vh;
+    }
+
+    .close-menu-label::after {
+        content: '☰';
+        position: fixed;
+        z-index: 2; /*o label vai focar sobre o menu */
+        top: 60px;
+        right: 20px;
+        color: white;
+        background-color: black;
+        font-size: 30px;
+        line-height: 30px;
+        width: 30px;
+        height: 30px;
+        text-align: center;
+        padding: 5px;
+        cursor: pointer;
+    }
+
+    .close-menu:checked~.little-white-position {
+        display: block; /*quando o close-menu estiver checked eu quero que o menu tenha display block*/
+    }
+    
+    .close-menu:checked~.close-menu-label::after {
+        content: '×';
+    }
+}
+
+@media (max-width: 1150px) {
+    #headset-content img {
+        width: 270px;
+        height: 404px;
+    }
+
+    #headset-content {
+        margin: 80px 250px 60px 250px;
+    }
+
+    #headset-content p {
+        font-size: 16px;        
+    }
+}
+
+@media (max-width: 986px) {
+    #intro-img img {
+        width: 313px;
+        height: 306px;
+    }
+
+    #intro-content h2 {
+        font-size: 38px; /*estava 60px*/
+    }
+
+    #intro-content p {
+        font-size: 16px;
+    }
+
+    .controls-dualsense {
+        padding: 40px;
+        /*  display: block;  */
+    }
+
+    .controls-dualsense img {
+        width: 359px;
+        height: 105px;
+    }
+
+    h3 {
+        font-size: 26px;
+    }
+
+    #charging-base-img img{
+        width: 320px;
+        height: 300px;
+    }
+
+    #media-control {
+        padding-right: 40px;
+        padding-left: 40px;
+    }
+
+    #media-control p {
+        font-size: 14px;
+        
+    }
 }
 
 @media (max-width: 700px) { /*largura do smartphone mais largo.*/
@@ -318,5 +522,49 @@ p {
 
     h3 {
         font-size: 30px;
+    }
+
+    #charging-base {
+        grid-template-columns: 1fr;
+    }
+
+    #charging-base-content {
+        margin-left: 40px; /*trocar para padding*/
+        margin-top: 40px;
+    }
+
+    #charging-base-img {
+        text-align: center;
+    }
+
+    #charging-base-img img{
+        width: 228px;
+        height: 206px;
+    }
+
+    #headset-content {
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+
+    #media-control {
+        grid-template-columns: 1fr;
+    }
+
+    #camera {
+        display: grid;
+        grid-template-areas: 
+            "camera-content camera-img"
+            "adaptador-camera adaptador-camera";
+        justify-content: center;
+        align-items: center;
+        padding-right: 200px;
+        padding-left: 200px;
+    }
+
+    #adaptador-camera {
+        grid-area: adaptador-camera;
+        text-align: center;
+        margin-bottom: 60px;
     }
 }
