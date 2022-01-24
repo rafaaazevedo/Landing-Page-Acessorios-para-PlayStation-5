@@ -239,7 +239,7 @@ p {
     font-weight: bold;
 }
 
-#charging-base { /*TRANSFORMAR PARA CLASSE: model-grid*/
+#charging-base { 
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 5px;
@@ -248,7 +248,7 @@ p {
 }
 
 #charging-base-content {
-    margin-left: 200px; /*trocar para padding*/
+    margin-left: 200px; 
 }
 
 #charging-base-img {
@@ -398,14 +398,14 @@ p {
     }
 }
 
-@media (max-width: 986px) {
+@media (max-width: 1000px) {
     #intro-img img {
         width: 313px;
         height: 306px;
     }
 
     #intro-content h2 {
-        font-size: 38px; /*estava 60px*/
+        font-size: 38px; 
     }
 
     #intro-content p {
@@ -440,9 +440,21 @@ p {
         font-size: 14px;
         
     }
+
+    #camera-content p {
+        font-size: 14px;
+    }
+
+    #adaptador-camera h3 {
+        font-size: 25px;
+    }
+
+    #adaptador-camera p {
+        font-size: 14px;
+    }
 }
 
-@media (max-width: 700px) { /*largura do smartphone mais largo.*/
+@media (max-width: 700px) { /*se basear largura do smartphone mais largo.*/
 
     .little-white-position {
         display: none;
@@ -553,9 +565,10 @@ p {
 
     #camera {
         display: grid;
-        grid-template-areas: 
-            "camera-content camera-img"
-            "adaptador-camera adaptador-camera";
+        grid-template-areas:         
+            "camera-content" 
+            "camera-img"
+            "adaptador-camera";
         justify-content: center;
         align-items: center;
         padding-right: 200px;
@@ -566,5 +579,13 @@ p {
         grid-area: adaptador-camera;
         text-align: center;
         margin-bottom: 60px;
+    }
+
+    #adaptador-camera h3 {
+        font-size: 25px;
+    }
+
+    #adaptador-camera p {
+        font-size: 14px;
     }
 }
